@@ -1,0 +1,31 @@
+D:\PROJECTS\DBActions\obj\Debug\ResolveAssemblyReference.cache
+D:\PROJECTS\DBActions\bin\Debug\DBActions.dll
+D:\PROJECTS\DBActions\bin\Debug\DBActions.pdb
+D:\PROJECTS\DBActions\obj\Debug\DBActions.dll
+D:\PROJECTS\DBActions\obj\Debug\DBActions.pdb
+E:\PROJECTS\DBActions\bin\Debug\DBActions.dll
+E:\PROJECTS\DBActions\bin\Debug\DBActions.pdb
+E:\PROJECTS\DBActions\obj\Debug\ResolveAssemblyReference.cache
+E:\PROJECTS\DBActions\obj\Debug\DBActions.dll
+E:\PROJECTS\DBActions\obj\Debug\DBActions.pdb
+D:\PROJECTS\QUAN LI SAN XUAT\PROJECT\DBActions\bin\Debug\DBActions.dll
+D:\PROJECTS\QUAN LI SAN XUAT\PROJECT\DBActions\bin\Debug\DBActions.pdb
+D:\PROJECTS\QUAN LI SAN XUAT\PROJECT\DBActions\obj\Debug\ResolveAssemblyReference.cache
+D:\PROJECTS\QUAN LI SAN XUAT\PROJECT\DBActions\obj\Debug\DBActions.dll
+D:\PROJECTS\QUAN LI SAN XUAT\PROJECT\DBActions\obj\Debug\DBActions.pdb
+D:\PROJECTS\QUAN LY SAN XUAT\PROJECT\DBActions\bin\Debug\DBActions.dll
+D:\PROJECTS\QUAN LY SAN XUAT\PROJECT\DBActions\bin\Debug\DBActions.pdb
+D:\PROJECTS\QUAN LY SAN XUAT\PROJECT\DBActions\obj\Debug\ResolveAssemblyReference.cache
+D:\PROJECTS\QUAN LY SAN XUAT\PROJECT\DBActions\obj\Debug\DBActions.dll
+D:\PROJECTS\QUAN LY SAN XUAT\PROJECT\DBActions\obj\Debug\DBActions.pdb
+D:\MTA\Learning\DEV\TAMS V2 project\Thầy Khánh\DBActions\bin\Debug\DBActions.dll
+D:\MTA\Learning\DEV\TAMS V2 project\Thầy Khánh\DBActions\bin\Debug\DBActions.pdb
+D:\MTA\Learning\DEV\TAMS V2 project\Thầy Khánh\DBActions\obj\Debug\DBActions.csprojResolveAssemblyReference.cache
+D:\MTA\Learning\DEV\TAMS V2 project\Thầy Khánh\DBActions\obj\Debug\DBActions.dll
+D:\MTA\Learning\DEV\TAMS V2 project\Thầy Khánh\DBActions\obj\Debug\DBActions.pdb
+C:\Users\ONION\Documents\Visual Studio 2015\Projects\TAMS_V2\DBActions\bin\Debug\DBActions.dll.config
+C:\Users\ONION\Documents\Visual Studio 2015\Projects\TAMS_V2\DBActions\bin\Debug\DBActions.dll
+C:\Users\ONION\Documents\Visual Studio 2015\Projects\TAMS_V2\DBActions\bin\Debug\DBActions.pdb
+C:\Users\ONION\Documents\Visual Studio 2015\Projects\TAMS_V2\DBActions\obj\Debug\DBActions.csprojResolveAssemblyReference.cache
+C:\Users\ONION\Documents\Visual Studio 2015\Projects\TAMS_V2\DBActions\obj\Debug\DBActions.dll
+C:\Users\ONION\Documents\Visual Studio 2015\Projects\TAMS_V2\DBActions\obj\Debug\DBActions.pdb

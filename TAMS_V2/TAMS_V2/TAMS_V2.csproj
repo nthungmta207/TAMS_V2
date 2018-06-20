@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{57DCCE69-3CAB-4279-9135-25E12994CA28}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TAMS_V2</RootNamespace>
+    <AssemblyName>TAMS_V2</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AVLTree\AVL.cs" />
+    <Compile Include="EF\BRANCH.cs" />
+    <Compile Include="EF\CHECKING_DOCUMENT.cs" />
+    <Compile Include="EF\DOCUMENT.cs" />
+    <Compile Include="EF\LANGUAGE.cs" />
+    <Compile Include="EF\PERMISSION.cs" />
+    <Compile Include="EF\RESULT.cs" />
+    <Compile Include="EF\SENTENCE.cs" />
+    <Compile Include="EF\SENTENCE_DOCUMENT.cs" />
+    <Compile Include="EF\SUPERVISOR.cs" />
+    <Compile Include="EF\sysdiagram.cs" />
+    <Compile Include="EF\TAMDbContext.cs" />
+    <Compile Include="EF\USER.cs" />
+    <Compile Include="EF\USER_PERMISSION.cs" />
+    <Compile Include="EF\USER_TYPE.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Modules\ucChecckDoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\ucChecckDoc.Designer.cs">
+      <DependentUpon>ucChecckDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Infrastructure\DbFactory.cs" />
+    <Compile Include="Services\Infrastructure\IDbFactory.cs" />
+    <Compile Include="Services\Infrastructure\IRepository.cs" />
+    <Compile Include="Services\Infrastructure\RepositoryBase.cs" />
+    <Compile Include="Services\Services\F_BRANCH.cs" />
+    <Compile Include="Services\Services\F_CHECKING_DOCUMENT.cs" />
+    <Compile Include="Services\Services\F_DOCUMENT.cs" />
+    <Compile Include="Services\Services\F_LANGUAGE.cs" />
+    <Compile Include="Services\Services\F_PERMISSION.cs" />
+    <Compile Include="Services\Services\F_RESULT.cs" />
+    <Compile Include="Services\Services\F_SENTENCE.cs" />
+    <Compile Include="Services\Services\F_SENTENCE_DOCUMENT.cs" />
+    <Compile Include="Services\Services\F_SUPERVISOR.cs" />
+    <Compile Include="Services\Services\F_USER.cs" />
+    <Compile Include="Services\Services\F_USER_PERMISSION.cs" />
+    <Compile Include="Services\Services\F_USER_TYPE.cs" />
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ucChecckDoc.resx">
+      <DependentUpon>ucChecckDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\AttachmentObject_16x16.png" />
+    <Content Include="Resources\BO_Feeds.png" />
+    <Content Include="Resources\BO_Feeds_Large.png" />
+    <Content Include="Resources\BO_Task.png" />
+    <Content Include="Resources\BO_Task_Large.png" />
+    <Content Include="Resources\ByState_32x32.png" />
+    <Content Include="Resources\Card_32x32.png" />
+    <Content Include="Resources\Close_16x16.png" />
+    <Content Include="Resources\Close_32x32.png" />
+    <Content Include="Resources\Code_Central.png" />
+    <Content Include="Resources\ColorMixer_16x16.png" />
+    <Content Include="Resources\ColorMixer_32x32.png" />
+    <Content Include="Resources\Completed_16x16.png" />
+    <Content Include="Resources\Completed_32x32.png" />
+    <Content Include="Resources\Contact_16x16.png" />
+    <Content Include="Resources\Contact_32x32.png" />
+    <Content Include="Resources\Contact_Us.png" />
+    <Content Include="Resources\Custom_Flag.png" />
+    <Content Include="Resources\Deferred_32x32.png" />
+    <Content Include="Resources\Delete_16x16.png" />
+    <Content Include="Resources\Delete_32x32.png" />
+    <Content Include="Resources\Doctor.png" />
+    <Content Include="Resources\EditContact_16x16.png" />
+    <Content Include="Resources\EditContact_32x32.png" />
+    <Content Include="Resources\EditFeed_16x16.png" />
+    <Content Include="Resources\EditFeed_32x32.png" />
+    <Content Include="Resources\EditTask_16x16.png" />
+    <Content Include="Resources\EditTask_32x32.png" />
+    <Content Include="Resources\ExportToCSV_32x32.png" />
+    <Content Include="Resources\ExportToHTML_32x32.png" />
+    <Content Include="Resources\ExportToImage_32x32.png" />
+    <Content Include="Resources\ExportToMHT_32x32.png" />
+    <Content Include="Resources\ExportToPDF_32x32.png" />
+    <Content Include="Resources\ExportToRTF_32x32.png" />
+    <Content Include="Resources\ExportToText_32x32.png" />
+    <Content Include="Resources\ExportToXLSX_32x32.png" />
+    <Content Include="Resources\ExportToXLS_32x32.png" />
+    <Content Include="Resources\Forward.png" />
+    <Content Include="Resources\High16x16.png" />
+    <Content Include="Resources\Important_16x16.png" />
+    <Content Include="Resources\LayoutFlip_16x16.png" />
+    <Content Include="Resources\LayoutFlip_32x32.png" />
+    <Content Include="Resources\LayoutRotate_16x16.png" />
+    <Content Include="Resources\LayoutRotate_32x32.png" />
+    <Content Include="Resources\ListByDate_32x32.png" />
+    <Content Include="Resources\List_32x32.png" />
+    <Content Include="Resources\Low16x16.png" />
+    <Content Include="Resources\Mail_16x16.png" />
+    <Content Include="Resources\Mail_32x32.png" />
+    <Content Include="Resources\MemoStyle.png" />
+    <Content Include="Resources\Miss.png" />
+    <Content Include="Resources\Mr.png" />
+    <Content Include="Resources\Mrs.png" />
+    <Content Include="Resources\Ms.png" />
+    <Content Include="Resources\MultiplePagesLarge.png" />
+    <Content Include="Resources\NavigationBar_16x16.png" />
+    <Content Include="Resources\NavigationBar_32x32.png" />
+    <Content Include="Resources\NewContact_16x16.png" />
+    <Content Include="Resources\NewContact_32x32.png" />
+    <Content Include="Resources\NewFeed_16x16.png" />
+    <Content Include="Resources\NewFeed_32x32.png" />
+    <Content Include="Resources\NewMail_16x16.png" />
+    <Content Include="Resources\NewMail_32x32.png" />
+    <Content Include="Resources\NewTask_16x16.png" />
+    <Content Include="Resources\NewTask_32x32.png" />
+    <Content Include="Resources\NextWeek_Flag.png" />
+    <Content Include="Resources\NoDate_Flag.png" />
+    <Content Include="Resources\normal.png" />
+    <Content Include="Resources\Number 1.png" />
+    <Content Include="Resources\Number 2.png" />
+    <Content Include="Resources\Number 3.png" />
+    <Content Include="Resources\Online_Help.png" />
+    <Content Include="Resources\OpenClendar_64x64.png" />
+    <Content Include="Resources\Overdue_32x32.png" />
+    <Content Include="Resources\Owner.png" />
+    <Content Include="Resources\PageMarginsModerate.png" />
+    <Content Include="Resources\PageMarginsNarrow.png" />
+    <Content Include="Resources\PageMarginsNormal.png" />
+    <Content Include="Resources\PageMarginsWide.png" />
+    <Content Include="Resources\PageOrientationLandscape.png" />
+    <Content Include="Resources\PageOrientationPortrait.png" />
+    <Content Include="Resources\PaperKind_A3.png" />
+    <Content Include="Resources\PaperKind_A4.png" />
+    <Content Include="Resources\PaperKind_A5.png" />
+    <Content Include="Resources\PaperKind_A6.png" />
+    <Content Include="Resources\PaperKind_Executive.png" />
+    <Content Include="Resources\PaperKind_Legal.png" />
+    <Content Include="Resources\PaperKind_Letter.png" />
+    <Content Include="Resources\PaperKind_Tabloid.png" />
+    <Content Include="Resources\PrintDirectLarge.png" />
+    <Content Include="Resources\Prioritized_32x32.png" />
+    <Content Include="Resources\Priority_16x16.png" />
+    <Content Include="Resources\Professor.png" />
+    <Content Include="Resources\reading.png" />
+    <Content Include="Resources\Refresh_16x16.png" />
+    <Content Include="Resources\Refresh_32x32.png" />
+    <Content Include="Resources\reminder.png" />
+    <Content Include="Resources\Reply.png" />
+    <Content Include="Resources\ReplyAll.png" />
+    <Content Include="Resources\ResetToDefault_16x16.png" />
+    <Content Include="Resources\SaveAll_32x32.png" />
+    <Content Include="Resources\Save_16x16.png" />
+    <Content Include="Resources\Save_32x32.png" />
+    <Content Include="Resources\Search.png" />
+    <Content Include="Resources\SortAsc_32x32.png" />
+    <Content Include="Resources\SplashScreen.png" />
+    <Content Include="Resources\TableStyle.png" />
+    <Content Include="Resources\ThisWeek_Flag.png" />
+    <Content Include="Resources\Today_16x16.png" />
+    <Content Include="Resources\Today_32x32.png" />
+    <Content Include="Resources\Today_Flag.png" />
+    <Content Include="Resources\ToDoList_32x32.png" />
+    <Content Include="Resources\Tomorrow_Flag.png" />
+    <Content Include="Resources\Unknown-user.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
